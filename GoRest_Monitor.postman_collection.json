@@ -6,6 +6,26 @@
   },
   "item": [
     {
+      "name": "Warm-up (khong kiem tra, chi mo ket noi)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/users?per_page=1"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Request khoi dong: thiet lap san DNS/TCP/TLS de request chinh do dung thoi gian phan hoi API.",
+              "console.log('Warm-up response time: ' + pm.response.responseTime + 'ms');"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "GET /users - Health & Response Time",
       "request": {
         "method": "GET",
