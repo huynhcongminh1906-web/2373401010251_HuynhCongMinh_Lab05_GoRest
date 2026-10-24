@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "88d791f2-5836-4c5d-967d-e0aedf22dcf4",
+    "_postman_id": "a62fa5db-6f9e-43be-a597-a1d32328c29c",
     "name": "MSSV_HoTen_GoRest_Monitor",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -16,9 +16,7 @@
             "type": "text"
           }
         ],
-        "url": {
-          "raw": "{{base_url}}/users"
-        }
+        "url": "{{base_url}}/users"
       },
       "event": [
         {
